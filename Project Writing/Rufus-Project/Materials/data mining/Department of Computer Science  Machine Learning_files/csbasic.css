@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: inherit;
+	font-size: 100.01%;
+	background: transparent;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	vertical-align: baseline;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, img, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+math, math+sub, math+sup
+{
+	font-family: "Lucida Sans Unicode",STIXGeneral,"DejaVu Serif","DejaVu Sans",Cambria,"Cambria Math",Times,OpenSymbol,"Standard Symbols L",cursive;
+	text-align: left;
+}
+
+sub
+{
+	vertical-align: text-bottom;
+	position: relative;
+	top: -0.25em;
+	line-height: 0;
+	font-size: 90%;
+}
+
+sup
+{
+	vertical-align: text-top;
+	position: relative;
+	top: 0.25em;
+	line-height: 0;
+	font-size: 90%;
+}
+
+
+html
+{
+	overflow-y: scroll !important;
+}
+
+table
+{
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td
+{
+	text-align: left;
+	font-weight: normal;
+}
+table, td, th
+{
+	vertical-align: top;
+}
+
+a img {border: none;}
+
+
+
+html {}
+body
+{ 
+	font-size: 86%;
+	line-height: 1.45em;
+	font-family: Helvetica,Arial,sans-serif;
+	color: #383838;
+}
+
+h1 
+{
+  font-size: 2.0em;
+  line-height: 1.25em;
+  margin-bottom: 0.67em;
+  font-weight: bold;
+}
+
+h2
+{
+  font-size: 1.7em;
+  line-height: 1.15em;
+  margin-bottom: 0.64em;
+  margin-top: 0.36em;
+  font-weight: bold;
+}
+
+h3
+{
+  font-size: 1.5em;
+  line-height: 1em;
+  line-height: 1.17em;
+  margin-top: 0.34em;
+  margin-bottom: 0.66em;
+}
+
+h4
+{
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+h5
+{
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+h6
+{
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+p
+{
+  font-size: 1em;
+  line-height: 1.45em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+}
+
+li ul, li ol { margin: 0;}
+ul, ol
+{
+	margin-bottom: 1.5em; 
+	padding-left: 3.34em;
+	padding-right: 3.34em;
+}
+
+ul {list-style-type: disc;}
+ol {list-style-type: decimal;}
+dl {margin-bottom: 1.5em;}
+dl dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+	
+caption
+{
+	padding-bottom: .75em;
+	font-weight: bold;
+}
+
+b {font-weight: bold;}
+
+fieldset {margin: 0 0 1.5em 0;}
+
+blockquote
+{
+	margin: 1em;
+	font-style: italic;
+	quotes: "\201C" "\201D";
+	color: #484848;
+	line-height: 1.5em;
+	font-size: 101.1%;
+	padding: 0px;
+}
+
+blockquote:before
+{
+	content: open-quote;
+	font-weight: bold;
+}
+
+blockquote:after
+{
+	content: close-quote;
+	font-weight: bold;
+}
+
+p, li, blockquote
+{
+	text-align: justify;
+}
+
+math ~ li
+{
+	text-align: left;
+}
+
+.recentcomments
+{
+	text-align: left;
+}

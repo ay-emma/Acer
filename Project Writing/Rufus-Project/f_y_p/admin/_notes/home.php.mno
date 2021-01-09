@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_admin" value="name:id_lect;datatype:int,name:name_lect;datatype:string,name:passwrd_lect;datatype:string,name:course_taken_lect;datatype:string,name:email_lect;datatype:string,name:dept_lect;datatype:string,name:faclty_lect;datatype:string" />
+</info>

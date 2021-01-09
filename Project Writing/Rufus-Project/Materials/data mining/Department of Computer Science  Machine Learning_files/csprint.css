@@ -1,0 +1,39 @@
+body
+{
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 0.77em !important;
+  color: #333333 !important;
+}
+
+/*  hide when printing */
+div#csbanner, div#header, a#universitylogo, div#nav, div#searchbar, ul.metalinks, .splashMenu, .splashNumbers, .coreheading, .coretext, .corecaption, a em, .socialshare, #breadcrumb
+{
+	display: none;
+}
+
+
+div#all
+{
+	width: auto !important;
+	margin: auto !important;
+	padding: auto !important;
+	border: 0 !important;
+}
+
+div#content
+{
+	margin: auto !important;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/*  display when printing */
+div#pageurl
+{
+  display: block !important;
+}
+

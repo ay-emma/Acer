@@ -1,0 +1,451 @@
+
+.icon24
+{
+	width: 80px;
+	height: 36px;
+	float: right;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.icon24 img
+{
+	width: 24px;
+	height: 24px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.headLinks a
+{
+	text-decoration: none;
+}
+
+.headLinks a:hover
+{
+	text-decoration: underline;
+}
+
+.searchinput
+{
+	color: #444444;
+	background-color: #FFFFFF;
+	font-size:12px;
+	left:auto;
+	line-height:15px;
+	margin:0;
+	min-height:15px;
+	padding:3px 4px 3px 7px;
+	width:175px;
+	height: 16px;
+	border:0px;
+	text-align: start;
+	vertical-align: baseline;
+}
+
+.searchbutton
+{
+	background:#FFFFFF url(/images/icons/search2.png) no-repeat scroll center center;
+	border:0px;
+	cursor:pointer;
+	left:auto;
+	margin:0;
+	padding:0;
+	width:28px;
+	height:24px;
+	text-indent:-4000px;
+	color: white;
+}
+
+.searchspan
+{
+	width:215px;
+	border:1px solid gray;
+}
+
+
+.projectContent
+{
+	margin: 0px 0px 20px 0px;
+	padding: 6px 0px 0px 0px;
+	border-top: 1px solid lightgray;
+}
+
+.newsItem
+{
+	margin: 0px 0px 20px 0px;
+	padding: 6px 0px 0px 0px;
+	border-top: 1px solid lightgray;
+}
+
+
+.newsItem .newsItemTitle
+{
+	font-weight: bold;
+	font-size: 1.25em;
+ 	line-height: 1.2em;
+	margin-bottom: 5px;
+	color: #005177;
+}
+
+.newsItem .newsItemTitle a
+{
+	text-decoration: none;
+	color: inherit;
+}
+.newsItem .newsItemTitle a:hover
+{
+	text-decoration: underline;
+}
+
+.newsItem .newsItemPosted
+{
+	color: #707070;
+	margin-bottom: 5px;
+}
+
+.newsItem .newsItemDescription
+{
+	margin-bottom: 12px;
+}
+
+.newsItem .newsItemSeries
+{
+	color: #707070;
+	margin-bottom: 5px;
+	font-style: italic;
+}
+
+.newsItem .newsItemPerson
+{
+	margin-bottom: 5px;
+}
+
+.socialshare
+{
+	border: 1px solid lightgray;
+	padding: 8px;
+	padding-right: 12px;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.socialshare span
+{
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.socialshare img
+{
+	margin-right: 5px;
+}
+
+.socialshare a
+{
+	text-decoration: none;
+}
+
+.socialshare a:hover
+{
+	text-decoration: underline;
+}
+
+.contactArea
+{
+	background-color: white;
+	margin-left: 10px;
+}
+
+.contactArea h2
+{
+	font-size: 124%;
+	font-weight: bold;
+	color: #222222;
+	margin-bottom: 4px;
+}
+
+
+.contactArea .contactBox
+{
+	margin: 0px 0px 20px 0px;
+	padding: 6px 0px 0px 0px;
+	border-top: 1px solid #E3E3E3;
+}
+
+.contactArea .contactBox div
+{
+	padding-left: 20px;
+}
+
+.contactArea .contactBox .contactPhoto
+{
+	height: 100px;
+	text-align: left;
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.contactArea .contactBox .contactPhoto img
+{
+	height: 100px;
+}
+
+.contactArea .contactBox .contactRole
+{
+	font-weight: bold;
+	font-size: 95%;
+}
+
+.contactArea .contactBox .contactBy
+{
+	font-size: 95%;
+}
+
+ul.vertical
+{
+	list-style-type: none;
+    padding: 0;
+	padding-top: 10px;
+}
+
+ul.vertical li
+{
+	margin-bottom: 10px;
+	display: block;
+	border-bottom: 1px solid lightgray;
+}
+
+ul.vertical li:after, ul.vertical li:after
+{
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+ul.vertical li img
+{
+	float: left;
+	width: 140px;
+	margin-bottom: 10px;
+}
+
+ul.vertical li div
+{
+	width: 600px;
+	margin-left: 160px;
+}
+
+
+table
+{
+	width: 100%;
+}
+
+table tr th
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	color: inherit;
+	background-color: inherit;
+	font-weight: bold;
+	color: #002147;
+	font-size: 1.12em;
+  	line-height: 1.2em;
+  	margin-bottom: 1.2em;
+}
+
+p.filterline
+{
+	font-size: 86%;
+	border: 0px;
+	margin: 2em 0;
+}
+
+p.filterline a.menu:hover, p.filterline a.menu:focus, p.filterline a.menu, p.filterline span.youarehere
+{
+	padding: 6px 10px;
+	border: 1px solid #CCCCCC;
+	margin-left: -1px;
+	background-image: none;
+	background-color: transparent;
+}
+
+p.filterline span.youarehere
+{
+	background-image: url(/images/ox-bg.gif);
+}
+
+p.filterline a.menu:hover, p.filterline a.menu:focus
+{
+	background-image: url(/images/ox-bg-over.gif);
+	color: white;
+}
+
+div#all
+{
+	border: 15px solid white !important; width: 960px !important; margin-left: auto !important; margin-right: auto !important;
+}
+
+div.websiteform
+{
+	padding: 0px 10px 10px 10px;
+	background-color: #F4FBFE;
+	border: 1px solid #C3C3C3;
+	background-color: #FFFFFF;
+}
+
+.personinfo div
+{
+	line-height: 150%;
+}
+
+.listedlinks
+{
+	text-align: left;
+}
+
+pre,code
+{
+	font-size: inherit;
+}
+
+h2 a, h2 a:visited, h2 a:link
+{
+	color: #002147 !important;
+	text-decoration: none;
+}
+
+h2 a:hover
+{
+	text-decoration: underline;
+}
+
+a.external
+{
+	background: url("/images/external.png") no-repeat scroll right center transparent;
+    padding-right: 13px;
+}
+
+/*
+CSS Workflow step arrows
+*/
+
+.workflowArrowBar
+{
+	height: 60px;
+}
+
+.workflowArrowSelected
+{
+}
+
+.workflowArrowNormal 
+{
+}
+
+.workflowArrowright
+{
+	width: 0; 
+	height: 0; 
+	
+	float: left;
+}
+
+.workflowArrowNormal .workflowArrowright
+{
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	
+	border-left: 30px solid #6687AC;
+}
+
+.workflowArrowSelected .workflowArrowright
+{
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	
+	border-left: 30px solid #002147;
+}
+
+.workflowArrowCutin
+{
+	width: 0; 
+	height: 0; 
+	
+	float: left;
+}
+
+.workflowArrowNormal .workflowArrowCutin
+{
+	border-top: 30px solid #6687AC;
+	border-bottom: 30px solid #6687AC;
+	
+	border-left: 30px solid transparent;
+}
+
+.workflowArrowSelected .workflowArrowCutin
+{
+	border-top: 30px solid #002147;
+	border-bottom: 30px solid #002147;
+	
+	border-left: 30px solid transparent;
+}
+
+.workflowArrowContents
+{
+	width: 60px;
+	height: inherit;
+	float: left;
+}
+
+.workflowArrowNormal .workflowArrowContents
+{
+	background-color:  #6687AC;
+}
+
+.workflowArrowSelected .workflowArrowContents
+{
+	background-color:  #002147;
+}
+
+.workflowArrow1, .workflowArrow2, .workflowArrow3, .workflowArrow4, .workflowArrow5, .workflowArrow6
+{
+	color: white;
+	width: 120px;
+	height: 60px;
+	float: left;
+	position: relative;
+}
+
+.workflowArrow2
+{
+	left: -15px;
+}
+
+.workflowArrow3
+{
+	left: -30px;
+}
+
+.workflowArrow4
+{
+	left: -45px;
+}
+
+.workflowArrow5
+{
+	left: -60px;
+}
+
+.workflowArrow6
+{
+	left: -75px;
+}
+

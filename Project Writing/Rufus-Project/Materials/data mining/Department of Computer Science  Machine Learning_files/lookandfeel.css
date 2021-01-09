@@ -1,0 +1,473 @@
+
+
+
+
+
+/*
+
+This stylesheet should be used to implement the look and feel of your site. The styles for implementing the basic layout of elements within the page can be found in the layout.css file.
+
+this stylesheet expect the following divs to be present in the HTML, in the order specified:
+
+body
+	div#all
+
+		div#header
+		div#content
+		div#mainnav
+		div#sidebar
+		div#footer
+
+*/
+
+
+
+
+/* specify colours for all major areas of the page  */
+
+
+body
+{
+
+
+}
+
+div#all {
+
+
+}
+
+div#header
+{
+  
+}
+
+ div#mainnav
+ {
+
+
+ }
+ 
+
+
+/* HEADER STYLES  */
+/* styles for arranging the two images in the header */  
+div#header 
+{
+text-align: right;
+}
+
+
+img#logo
+{
+position: absolute;
+top: 20px;
+left: 0px;
+
+}
+
+
+
+
+
+
+/* INLINE CONTENT IMAGES  */
+
+/* often when you place images in the page as content, you want the surrounding textual content to wrap around it. If this is the case, give the img tag a class of 'inline' so that th styles below will be applied */
+
+.inline
+{
+border: 1px solid #000;
+float:left;
+margin-right: 7px;
+margin-bottom: 7px;
+}
+
+
+/* styling for code snippets divs */
+
+
+code{
+font-size: 1.3em;
+padding: 0.3em;
+}
+
+
+
+/*headline links  - styles for displaying links as a headline with associated image beneath*/
+
+
+a.headline-link
+{
+text-align: center;
+display: block;
+float: left;
+margin: 10px;
+font-family: lucida grande, verdana, sans-serif;
+font-style: normal;
+letter-spacing: 0.2em;
+width: 194px;
+background-color: #222; 
+border: 2px solid #222;
+color: #fff;
+padding: 3px;
+padding-bottom: 203px;
+text-decoration: none;
+
+}
+/*  change the background and border colour on mouseover or focus */
+a:hover.headline-link, a:focus.headline-link
+	{
+background-color: #000;
+border-color: #000;
+	}
+/* for every headline link, give it an id and then specify an appropriate image
+
+e.g.
+
+#headline-1
+{
+background-image: url('../images/chameleon.jpg');
+background-repeat: no-repeat;
+background-position: bottom left;
+}
+
+*/
+
+
+/* panels stuff */
+/*style a div with a border around it. Set padding to 0px so that the h2 contained within the div can appear flush to the border of the div */
+div.panel
+{
+background-color:white;
+padding: 0px;
+clear: both;
+border: 2px solid #999;
+margin: 1em;
+margin-top: 2.5em;
+}
+/* set the  border-bottom  of the  h2 within the panel div to be the same as the  border for the div 
+Set the background colour of the h2 to a dark colour that's similar to the div border colour, but a bit lighter 
+*/
+div.panel h2
+{
+border-bottom: 2px solid  #999;
+color: #fff;
+background-color:  #aaa;
+padding: 2px;
+margin: 0px;
+text-align: center;
+font-size: 1.1em;
+}
+/* add some margin to any element that's likely to appear in the panel div - this is done individually so that the h2 within the panel div remains flush to the border */
+div.panel p, div.panel img, div.panel h3, div.panel h4, div.panel table, div.panel ul, div.panel form, div.panel div
+{
+margin: 10px;
+}
+/*  a general class to apply to elemnts that you want to clear (for example, a paragrpah that ocurs before or after the floated headline links) */
+.clear
+{
+clear: both;
+}
+
+/* table styles */
+table
+{
+width: 90%;
+}
+table td, table th
+{
+padding: 0.4em;
+margin: 0.2em;
+/* border: 1px solid #ccc; */
+vertical-align: top;
+line-height: 1.3em;
+text-align: left;
+}
+table td p
+{
+padding: 0px;
+margin: 0px;
+padding-bottom: 0.5em;
+}
+
+table tr th
+{
+position: absolute;
+left: 3600px;
+font-weight: bold;
+color: #369;
+background-color: #bfcfe1;
+}
+table td.date, table td.name
+{
+width: 10em;
+font-weight: bold;
+color: #369;
+}
+
+table td.name
+{
+width: 12em;
+}
+
+h2.faq
+{
+/*color: #036;
+*/
+}
+
+dl.contact
+{
+}
+dl.contact dt
+{
+font-weight: bold;
+float: left;
+margin-right: 0.5em;
+}
+dl.contact dd 
+{
+margin: 0px;
+padding-bottom: 1em;
+}
+dl.contact dd address
+{
+font-style: normal;
+padding-top: 0.5em;
+display: block;
+line-height: 1.5em;
+clear: both;
+}
+ul.links
+{
+margin: 0.5em;
+}
+ul.links li
+{
+list-style: none;
+}
+
+
+
+
+
+
+div#content div.illustration
+{
+width: 260px;
+float: right;
+background-color: #002147;
+padding: 5px;
+border: 1px solid #002147;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+div#content div.large
+{
+width: 510px;
+float: none;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+div#content div.illustration p
+{
+
+margin: 0px;
+padding: 0px;
+}
+
+div#content div.illustration img
+{
+padding: 4px;
+border: 1px solid #002147;
+background-color: #fff;
+margin-bottom: 5px;
+
+}
+div#content ul
+{
+margin-top: 10px;
+}
+
+div#content ul li
+{
+padding: 0px;
+margin: 0px;
+margin-bottom: 3px;
+}
+
+div#footer a
+
+{
+margin: 20px;
+}
+
+div#content div.personprofile
+{
+clear: both;
+margin-bottom: 30px;
+}
+
+
+div#content div.personprofile h2
+{
+background-color: #faf8f7;
+border-top: 1px solid #002147;
+border-bottom: 1px solid #002147;
+padding-left: 3px;
+}
+
+
+div#content div.personprofile img
+{
+width: 280px;
+float: right;
+background-color: #002147;
+padding: 5px;
+border: 1px solid #002147;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+
+p.filterline a.menu
+{
+  text-align: right;
+  border-top: 1px solid #002147;
+  border-bottom: 1px solid #002147;
+  border-right: 1px solid #002147;
+  margin: 0;
+  padding: 9px 10px;
+  text-decoration: none;
+  background-color: #F2F9FF;
+  background-image: url('/images/sitemap/white-highlight.png');
+}
+
+p.filterline a.menu:hover, p.filterline a.menu:focus
+{
+  text-align: right;
+  border-top: 1px solid #002147;
+  border-bottom: 1px solid #002147;
+  border-right: 1px solid #002147;
+  margin: 0;
+  padding: 9px 10px;
+  text-decoration: none;
+  background-color: #C0D3E4;
+  color: #000000;
+}
+
+
+p.filterline span.youarehere
+{
+  text-align: right;
+  border-top: 1px solid #002147;
+  border-bottom: 1px solid #002147;
+  border-right: 1px solid #002147;
+  margin: 0;
+  padding: 9px 10px;
+  text-decoration: none;
+  background-color: #002147;
+  background-image: url('/images/sitemap/white-highlight.png');
+
+  color: #FFFFFF;
+}
+
+p.filterline
+{
+  border-left: 1px solid #002147;
+  padding: 8px 0;
+}
+
+p.newsTitle
+{
+  font-weight: bold;
+  float: left;
+  display: block;
+  clear: none;
+}
+
+p.newsCategory
+{
+  float:right;
+  display: block;
+  clear: none;
+  font-style: italic;
+}
+
+p.newsMoreDetails
+{
+  padding-bottom: 1em;
+  margin-top: 0;
+}
+
+p.newsDescription
+{
+  clear: both;
+  margin-bottom: 0;
+}
+
+pre
+{
+  font-size: 1.2em;
+}
+
+table#searchtable
+{
+  width: 197px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+td#searchinput
+{
+  padding-right: 5px;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  vertical-align: top;
+
+}
+
+td#searchbutton
+{
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 3em;
+
+}
+
+
+p.oneliner
+{
+  margin-left: 2em;
+  text-indent: -2em;
+}
+
+div.websiteform
+{
+  background-color: #f2f9ff;
+  border: 1px solid #002147;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+td.personInfo
+{
+  width: 11em;
+}
+
+td.personImg
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 220px;
+}

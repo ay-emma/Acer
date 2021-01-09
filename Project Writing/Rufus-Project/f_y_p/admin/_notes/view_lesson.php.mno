@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_lesson" value="name:id_lssn;datatype:int,name:title_lssn;datatype:string,name:content_lssn;datatype:blob,name:course_id_lssn;datatype:string,name:lecturer_id_lssn;datatype:string,name:date_added_lssn;datatype:string" />
+</info>

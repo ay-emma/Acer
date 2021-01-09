@@ -1,0 +1,39 @@
+body
+{
+	background-image: none !important;
+}
+
+div#breadcrumb
+{
+	margin-left: 0px;
+	margin-right: 193px;
+	padding-left: 0px;
+}
+
+div#content
+{
+	margin-left: 0px;
+	margin-right: 193px;
+	padding-left: 0px;
+}
+
+div#sidebar
+{
+	/*top: 218px;*/
+	top: 173px;
+	left: auto;
+	right: 0px;
+	text-align: left;
+}
+
+
+div.three-cols div.category
+{
+	background-color:transparent;
+}
+
+div.category a:hover span.readmore, div.category a:focus span.readmore, div.category a:hover span.headline, div.category a:focus span.headline
+{
+	color:#0033FF;
+	background-color: transparent !important;
+}

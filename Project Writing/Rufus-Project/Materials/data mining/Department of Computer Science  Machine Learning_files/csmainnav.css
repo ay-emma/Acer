@@ -1,0 +1,164 @@
+div#nav ul
+{
+margin: 0px;
+margin-left: 10px;
+padding:0;
+border: 0;
+border-bottom:1px solid #CCCCCC;
+}
+
+div#nav ul li
+{
+	
+}
+
+
+div#nav ul li, div#nav ul li a, div#nav ul li a:hover, div#nav ul li a:focus, div#nav ul li span.youarehere, div#nav ul li a.currentsection, div#nav ul li a.rss, div#nav ul li a.ical
+{
+	font-size:0.95em;
+	line-height: 1.05em;
+	border-bottom:1px solid #FFFFFF;
+	border-top:1px solid #CCCCCC;
+	background-color: transparent;
+	background-image: none;
+	color: #222222;
+	margin-top: -1px;
+	text-align: left;
+}
+
+div#nav ul li a, div#nav ul li a:hover, div#nav ul li a:focus, div#nav ul li span.youarehere, div#nav ul li a.currentsection, div#nav ul li a.rss, div#nav ul li a.ical
+{
+	padding-left: 20px;
+}
+
+
+h2#inthissection
+{
+	margin-left: 10px;
+	margin-bottom: 4px;
+	border: 0;
+	background-color: transparent;
+	color: #222222;
+	font-weight: bold;
+	font-size: 124%;
+	text-align: left;
+}
+
+div#nav ul li a.currentsection, div#nav ul li span.youarehere
+{
+	color: #002147;
+	font-weight: bold;
+	cursor: default;
+	padding-left: 0px;
+}
+
+div#nav ul li a.currentsection:before, div#nav ul li span.youarehere:before
+{
+	content:url(/images/menu_arrow.png);
+}
+
+div#nav ul li a.rss, div#nav ul li a.ical
+{
+	padding-left: 0px;
+}
+
+div#nav ul li a.rss:before
+{
+	content: url(/images/menu_rss.gif);
+}
+
+div#nav ul li a.ical:before
+{
+	content: url(/images/menu_ical.gif);
+}
+
+div#sidebar ul.mainnav, div#sidebar ul.subnav
+{
+	margin-bottom: 2em;
+}
+
+div.popoutarea
+{
+	position: relative;
+}
+
+li.popout, li.poppedout
+{
+	background: transparent;
+	color: #333333;
+	padding:5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	text-decoration:none;
+	
+	
+	background-image:url(/images/menu_arrow.png);
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+
+li.poppedout
+{
+	padding:5px;
+	background-color: #CCCCCC !important;
+}
+
+li.popout a, li.popout a:hover
+{
+	color: #333333;
+	-webkit-outline: none;
+	-moz-outline: none;
+	-o-outline: none;
+	outline: none;
+}
+
+li.poppedout a, li.poppedout a:hover
+{
+	color: black;
+	-webkit-outline: none;
+	-moz-outline: none;
+	-o-outline: none;
+	outline: none;
+}
+
+li.popout div.popoutmenu, li.poppedout div.popoutmenu
+{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	
+	-webkit-border-top-right-radius:0;
+	-o-border-top-right-radius:0;
+	-moz-border-radius-topright:0;
+	border-top-right-radius:0;
+	
+	
+	background-color:#FFFFFF;
+	border:5px solid #CCCCCC;
+	line-height:16px;
+	margin:0;
+	padding:8px;
+	position:absolute;
+	left:-315px;
+	text-align:left;
+	top:0px;
+	width: 300px;
+	z-index:100;
+}
+
+li.popout div.popoutmenu
+{
+	display: none;
+}
+
+li.poppedout div.popoutmenu
+{
+	display: block;
+
+}
+
+#Calendarbox
+{
+	border: 15px solid white; width: 960px; margin-left: auto; margin-right: auto;
+}

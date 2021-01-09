@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0044)http://www.cs.ox.ac.uk/activities/machlearn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xml:lang="en" lang="en-gb" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link media="all" href="./Department of Computer Science  Machine Learning_files/basic.css" rel="stylesheet" type="text/css">
+<link media="all" href="./Department of Computer Science  Machine Learning_files/csbasic.css" rel="stylesheet" type="text/css">
+<link media="screen,projection,print" href="./Department of Computer Science  Machine Learning_files/layout.css" rel="stylesheet" type="text/css">
+<link media="screen,projection,print" href="./Department of Computer Science  Machine Learning_files/mainnav.css" rel="stylesheet" type="text/css">
+<link media="screen,projection,print" href="./Department of Computer Science  Machine Learning_files/lookandfeel.css" rel="stylesheet" type="text/css">
+<link media="screen,projection,print" href="./Department of Computer Science  Machine Learning_files/cslayout.css" rel="stylesheet" type="text/css">
+<link media="screen,projection,print" href="./Department of Computer Science  Machine Learning_files/csmainnav.css" rel="stylesheet" type="text/css">
+<link media="screen,projection,print" href="./Department of Computer Science  Machine Learning_files/cslookandfeel.css" rel="stylesheet" type="text/css">
+<link media="print" href="./Department of Computer Science  Machine Learning_files/csprint.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" async="" src="./Department of Computer Science  Machine Learning_files/ga.js"></script><script type="text/javascript" src="./Department of Computer Science  Machine Learning_files/rss.js"></script>
+<script type="text/javascript" src="./Department of Computer Science  Machine Learning_files/csmenu.js"></script>
+
+<link rel="icon" href="http://www.cs.ox.ac.uk/favicon.ico" type="images/x-icon"> 
+<link rel="shortcut icon" href="http://www.cs.ox.ac.uk/favicon.ico">
+<link rel="top" href="http://www.cs.ox.ac.uk/" title="Homepage">
+<meta name="author" content="University of Oxford">
+
+<title>Department of Computer Science: Machine Learning</title>
+<meta name="keywords" content="Department of Computer Science Research Activities Machine Learning">
+<meta name="description" content="Research activities in the area of .//booster:primitive[@ref=&#39;activityTitle&#39;]">
+<meta property="og:site_name" content="Department of Computer Science">
+<meta property="og:title" content="Machine Learning">
+<meta property="og:image" content="http://www.cs.ox.ac.uk/images/CompSci_logo_landscapeL_rgb_corrected.jpg">
+<meta property="og:url" content="http://www.cs.ox.ac.uk/activities/machinelearning/">
+<script type="text/javascript">
+// <![CDATA[
+
+	/**
+	**  Honour the "do not track" browser setting.
+	**/
+	if(typeof navigator.doNotTrack === "undefined" || (navigator.doNotTrack !== 'yes' && navigator.doNotTrack !== '1'))
+	{
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-25164877-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	}
+  
+// ]]>
+</script>
+<script type="text/javascript" src="./Department of Computer Science  Machine Learning_files/eucookielaw.js"></script>
+</head>
+<body style="background-image: none;">
+<!-- all div starts -->
+<div id="all" style="border: 15px solid white; width: 960px; margin-left: auto; margin-right: auto">
+
+<div style="border-bottom: 10px solid white;position: relative; width: 960px" id="csbanner"><!-- 156 -->
+<img src="./Department of Computer Science  Machine Learning_files/CompSci_logo_landscapeL_rgb_corrected.jpg" style="height: 140px;position: relative; left: -1px; top: -1px" alt="University of Oxford Logo" usemap="#compscimap">
+<map name="compscimap" id="compscimap"><area shape="rect" coords="0,0,140,140" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"><area shape="rect" coords="164,0,427,140" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"></map>
+<!-- searchbox div starts -->
+<div style="position: absolute; right: 0px; top: 15px;" id="topnav">
+
+<div style="position: absolute; right: 0px; height: 1.5em">
+<form action="http://www.cs.ox.ac.uk/search/" id="searchbox_015502513156171547487:pcshjhkjzqe">
+<div class="searchspan">
+<input type="text" class="searchinput" maxlength="128" autocomplete="off" name="q" value="Search" onfocus="if(this.value==&#39;Search&#39;){this.value=&#39;&#39;;}" onblur="if(this.value==&#39;&#39;){this.value=&#39;Search&#39;;}"><input type="submit" name="sa" value="" class="searchbutton"> 
+</div>
+<input type="hidden" name="cx" value="015502513156171547487:pcshjhkjzqe">
+<input type="hidden" name="cof" value="FORID:11">
+  
+<!--
+ <table id="searchtable" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td id="searchinput">
+    <input type="text" maxlength="128" autocomplete="off" name="q" value="Search" onfocus="if(this.value=='Search'){this.value='';}" onblur="if(this.value==''){this.value='Search';}"/>
+   </td>
+   <td id="searchbutton">
+    <input type="hidden" name="cx" value="015502513156171547487:pcshjhkjzqe" />
+    <input type="hidden" name="cof" value="FORID:11" />
+    <input type="submit" name="sa" value="Search" id="submit"/>
+   </td>
+  </tr>
+ </table>
+ -->
+</form>
+</div>
+
+<div class="headLinks" style="position: absolute; top: 2.8em; right: 1px; width: 440px; padding: 4px; text-align: right; font-size: 90%;">
+<a href="http://www.cs.ox.ac.uk/research/">Our research</a>&nbsp;&nbsp;<a href="http://www.cs.ox.ac.uk/people/">Our people</a>&nbsp;&nbsp;<a href="http://www.cs.ox.ac.uk/sitemap.html">Site map</a>&nbsp;&nbsp;<a href="http://www.cs.ox.ac.uk/privacy-policy.html">Privacy &amp; Cookies</a>&nbsp;&nbsp;<a href="http://www.cs.ox.ac.uk/contact/history.html">About us</a>&nbsp;&nbsp;<a href="http://www.cs.ox.ac.uk/contact.html">Contact us</a>
+</div>
+
+<div style="position: absolute; top: 5.5em; right: -20px; width: 400px; padding: 4px 0px 4px 0px;text-align: right; vertical-align: center; text-align: center">
+
+<div class="icon24">
+<a href="http://www.facebook.com/DepartmentOfComputerScienceUniversityOfOxford"><img src="./Department of Computer Science  Machine Learning_files/facebook.png" alt="On Facebook" title="The Department on Facebook"><div>Facebook</div></a>
+</div>
+
+<div class="icon24">
+<a href="http://twitter.com/softeng"><img src="./Department of Computer Science  Machine Learning_files/twitter.png" alt="Follow us on twitter" title="Follow us on twitter"><div>Twitter</div></a>
+</div><!--
+
+<div class="icon24">
+<img src="/images/icons/24/linkedin.png" alt="Linked in" title="Linked in"/><div>Linked in</div>
+</div>
+-->
+<div class="icon24">
+<a href="http://www.flickr.com/photos/computerscienceoxford/"><img src="./Department of Computer Science  Machine Learning_files/flickr.png" alt="Flickr" title="Flickr"><div>Flickr</div></a>
+</div>
+
+<div class="icon24">
+<a href="http://del.icio.us/post?v=4&jump=close&url=http%3A%2F%2Fwww.cs.ox.ac.uk/activities/machlearn/index.html&title=Department+of+Computer+Science&"><img src="./Department of Computer Science  Machine Learning_files/delicious.png" alt="Delicious" title="Delicious"><div>Del.icio.us</div></a>
+</div>
+
+<div class="icon24">
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.cs.ox.ac.uk/activities/machlearn/index.html&title=Department+of+Computer+Science&"><img src="./Department of Computer Science  Machine Learning_files/stumbleupon.png" alt="Stumble Upon" title="Stumble Upon"><div>Stumble&nbsp;Upon</div></a>
+</div>
+
+</div>
+
+</div>
+	<!-- EU Cookie law banner -->
+		<div style="position: absolute; right: 0px; top: 0px; width: 480px; border: 1px solid rgb(0, 33, 71); background-color: white; display: block;" id="cookiepolicy">
+		<div style="padding: 7px; font-size: 80%">
+			<div style="float:right; padding: 7px"><button onclick="continueUsingSite()" style="background-color: #001247; color: white; border: 0; background-image: url(&quot;/images/ox-bg.gif&quot;);">Continue…</button></div>
+			<p>We use cookies on this website. <a href="http://www.cs.ox.ac.uk/privacy-policy.html">Our privacy policy</a> explains what cookies are and how they are being used here.
+			If you continue to access our website, we'll assume that you consent to receiving cookies from this website.</p>
+			
+			</div>
+		</div>
+	<!--/ EU Cookie law banner -->
+</div>
+
+<div id="pageurl" style="display: none">
+www.cs.ox.ac.uk/activities/machlearn/index.html
+</div>
+
+<!-- header div ends -->
+
+<!-- breadcrumb div starts -->
+
+
+<div id="breadcrumb">
+   <span id="breadcrumb-label">You are here:</span>
+   <ul>
+      <li>
+         <a href="http://www.cs.ox.ac.uk/">Home</a>
+      </li>
+      <li>
+         <a href="http://www.cs.ox.ac.uk/research/">Research</a>
+      </li>
+      <li>
+         <a href="http://www.cs.ox.ac.uk/research/activities.html">Activities</a>
+      </li>
+      <li>
+         <span class="youarehere">Machine Learning</span>
+      </li>
+   </ul>
+</div>
+<div id="content">
+   <h1>Machine Learning</h1><p>Machine learning research in the Department of Computer Science is mainly concerned with:</p>
+   
+   <ul>
+   <li> The theory and application of <strong>Computational Intelligence Techniques</strong>: Artificial Neural Networks (ANNs),
+   Fuzzy and       Neuro-Fuzzy Systems, Genetic Algorithms and Hybrid Intelligent       Systems. The principal research contact
+   for these areas is        <a href="http://www.cs.ox.ac.uk/oucl/people/vasile.palade.html">Vasile Palade</a>.</li>
+   <li><strong>Applications of Symbolic Machine Learning</strong> to real-world       problems including the performance of computer
+   systems       (including the        <a href="http://www.cs.ox.ac.uk/oucl/research/areas/softeng/eWLM/">Grid</a>),       applied computer security,
+   and other areas. Techniques used       range from <a href="http://www.cs.ox.ac.uk/oucl/research/areas/machlearn/ilp_theory.html">Inductive Logic
+   Programming       (ILP)</a> to decision-tree techniques. The principal research       contact for these areas is        <a href="http://www.cs.ox.ac.uk/oucl/work/steve.moyle/">Steve Moyle</a>.</li>
+   </ul>
+   
+   <ul>
+   <li><strong>Past activities</strong>, have been focused on the         <a href="http://www.cs.ox.ac.uk/oucl/research/areas/machlearn/ilp_theory.html">theory</a>,
+   implementation, and        <a href="http://www.cs.ox.ac.uk/oucl/research/areas/machlearn/applications.html">application</a> of Inductive Logic 
+   Programming (ILP).  Application areas included those in        <a href="http://www.cs.ox.ac.uk/oucl/research/areas/machlearn/drugs.html">drug design</a>,
+   bioinformatics and       chemoinformatics.  Non-ILP research was concerned with the use       of symbolic machine learning
+   like decision-tree techniques to       interesting real-world problems.  The principal research for       these areas was
+   performed by past members including        <a href="http://www.cs.ox.ac.uk/oucl/work/ashwin.srinivasan/">Ashwin Srinivasan</a>.       Aswhin's ILP
+   system <strong>Aleph</strong> can be found        <a href="http://www.cs.ox.ac.uk/oucl/research/areas/machlearn/Aleph/aleph_toc.html"> here</a>.</li>
+   </ul>
+   <div id="latestBlog"></div>
+   <script type="text/javascript" defer="defer">
+      window.setTimeout(function(){loadRSSAsNews("/dynamicfeed/firstFeedItem.jsp?url=http://www.cs.ox.ac.uk/blogs/machinelearning/feed/","latestBlog",null,null,{heading:"Blog",headingSize:"2",headingURL: "/blogs/machinelearning/",showDate: true});},1);
+      
+   </script>
+   <h2>People</h2>
+   <table>
+      <tbody><tr>
+         <td class="personInfo">
+            <p>
+               <b>Faculty</b>
+            </p>
+         </td>
+         <td>
+            <p class="listedlinks">
+               </p><div style="height: 120px; width: 140px;border: 1px solid lightgray; display: inline-block; padding: 5px; padding-top: 21px;vertical-align: top; margin: 0 5px 11px 0">
+                  <div style="height: 80px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Phil.Blunsom">
+                           <img align="center" height="80" src="./Department of Computer Science  Machine Learning_files/small_phil.blunsom.gif" alt="Personal photo - Phil Blunsom">
+                        </a>
+                     </center>
+                  </div>
+                  <div style="line-height: 16px; padding-top: 5px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Phil.Blunsom">Phil Blunsom</a>
+                     </center>
+                  </div>
+               </div>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td class="personInfo">
+            <p>
+               <b>Students</b>
+            </p>
+         </td>
+         <td>
+            <p class="listedlinks">
+               </p><div style="height: 120px; width: 140px;border: 1px solid lightgray; display: inline-block; padding: 5px; padding-top: 21px;vertical-align: top; margin: 0 5px 11px 0">
+                  <div style="height: 80px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Jan.Botha">
+                           <img align="center" height="80" src="./Department of Computer Science  Machine Learning_files/small_botha.jan.gif" alt="Personal photo - Jan Botha">
+                        </a>
+                     </center>
+                  </div>
+                  <div style="line-height: 16px; padding-top: 5px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Jan.Botha">Jan Botha</a>
+                     </center>
+                  </div>
+               </div>
+               <div style="height: 120px; width: 140px;border: 1px solid lightgray; display: inline-block; padding: 5px; padding-top: 21px;vertical-align: top; margin: 0 5px 11px 0">
+                  <div style="height: 80px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Gregory.Dubbin">
+                           <img align="center" height="80" src="./Department of Computer Science  Machine Learning_files/small_dubbin.gregory.gif" alt="Personal photo - Gregory Dubbin">
+                        </a>
+                     </center>
+                  </div>
+                  <div style="line-height: 16px; padding-top: 5px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Gregory.Dubbin">Gregory Dubbin</a>
+                     </center>
+                  </div>
+               </div>
+               <div style="height: 120px; width: 140px;border: 1px solid lightgray; display: inline-block; padding: 5px; padding-top: 21px;vertical-align: top; margin: 0 5px 11px 0">
+                  <div style="height: 80px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/KarlMoritz.Hermann">
+                           <img align="center" height="80" src="./Department of Computer Science  Machine Learning_files/small_kmh-cropped.png" alt="Personal photo - Karl Moritz Hermann">
+                        </a>
+                     </center>
+                  </div>
+                  <div style="line-height: 16px; padding-top: 5px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/KarlMoritz.Hermann">Karl Moritz Hermann</a>
+                     </center>
+                  </div>
+               </div>
+               <div style="height: 120px; width: 140px;border: 1px solid lightgray; display: inline-block; padding: 5px; padding-top: 21px;vertical-align: top; margin: 0 5px 11px 0">
+                  <div style="height: 80px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Ivans.Lubenko">
+                           <img align="center" height="80" src="./Department of Computer Science  Machine Learning_files/small_profilepic001.jpg" alt="Personal photo - Ivans Lubenko">
+                        </a>
+                     </center>
+                  </div>
+                  <div style="line-height: 16px; padding-top: 5px">
+                     <center>
+                        <a href="http://www.cs.ox.ac.uk/people/Ivans.Lubenko">Ivans Lubenko</a>
+                     </center>
+                  </div>
+               </div>
+            <p></p>
+         </td>
+      </tr>
+      <tr>
+         <td class="personInfo">
+            <p>
+               <b>Past Members</b>
+            </p>
+         </td>
+         <td>
+            <p class="listedlinks">
+               </p><div style="height: 120px; width: 140px;border: 1px solid lightgray; display: inline-block; padding: 5px; padding-top: 21px;vertical-align: top; margin: 0 5px 11px 0">
+                  <div style="height: 80px">
+                     <center>
+                        <img align="center" height="80" src="./Department of Computer Science  Machine Learning_files/small_abby.levenberg.gif" alt="Personal photo - Abby Levenberg">
+                     </center>
+                  </div>
+                  <div style="line-height: 16px; padding-top: 5px">
+                     <center>Abby Levenberg</center>
+                  </div>
+               </div>
+            <p></p>
+         </td>
+      </tr>
+   </tbody></table>
+   <h2>
+      Info
+      
+   </h2>
+   <table>
+      <tbody><tr>
+         <td class="personInfo">
+            <p>
+               <b>Themes</b>
+            </p>
+         </td>
+         <td>
+            <p class="listedlinks">
+               <a href="http://www.cs.ox.ac.uk/research/is">Information&nbsp;Systems</a>
+            </p>
+         </td>
+      </tr>
+   </tbody></table>
+   <div class="socialshare">
+Share this page:
+<span>
+<img width="14" height="14" title="" alt="" src="./Department of Computer Science  Machine Learning_files/facebook.gif"><a id="facebook" href="http://facebook.com/sharer.php?u=http%3A%2F%2Fwww.cybersecurity.ox.ac.uk/activities/machlearn/index.html&t=Department%20of%20Computer%20Science%3A%20Machine%20Learning&">Facebook</a>
+</span>
+
+<span>
+<img width="16" height="14" title="" alt="" src="./Department of Computer Science  Machine Learning_files/digg.gif"><a href="http://digg.com/submit?url=http%3A%2F%2Fwww.cybersecurity.ox.ac.uk/activities/machlearn/index.html&">Digg</a>
+</span>
+
+<span>
+<img width="14" height="14" title="" alt="" src="./Department of Computer Science  Machine Learning_files/delicious.gif"><a id="delicious" href="http://del.icio.us/post?v=4&jump=close&url=http%3A%2F%2Fwww.cybersecurity.ox.ac.uk/activities/machlearn/index.html&title=Department%20of%20Computer%20Science%3A%20Machine%20Learning&">Del.icio.us</a>
+</span>
+
+<span>
+<img width="14" height="14" title="" alt="" src="./Department of Computer Science  Machine Learning_files/stumbleupon.gif"><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.cybersecurity.ox.ac.uk/activities/machlearn/index.html&">StumbleUpon</a>
+</span>
+
+</div>
+<script type="text/javascript">
+// <![CDATA[
+
+
+var pageTitle=document.title;
+
+if(pageTitle)
+{
+	if(encodeURIComponent){pageTitle=encodeURIComponent(pageTitle);}
+	else
+	if(encodeURLComponent){pageTitle=encodeURLComponent(pageTitle);}
+	else
+	if(escape){pageTitle=escape(pageTitle);}
+	
+	
+	var anchorIds=["facebook","twitter","delicious"];
+	for(var i=0;i<anchorIds.length;i++)
+	{
+		var anchor=HtmlUpdater.$(anchorIds[i]);
+		if(!anchor){continue;}
+		if(!anchor.href){continue;}
+		
+		var href=anchor.href;
+		
+		var eq=href.lastIndexOf("=");
+		var at=href.indexOf('@');
+		
+		if(at==-1)
+		{
+			anchor.href=href.substring(0,eq+1)+pageTitle+"&";
+		}
+		else
+		{
+			anchor.href=href.substring(0,eq+1)+document.title+" "+href.substring(at);
+		}
+	}
+
+}
+
+// ]]>
+</script>
+</div>
+<div id="sidebar">
+
+<!--  mainnav div starts -->
+<div id="nav">     
+ <h2 id="mainsections">Main sections</h2>
+ 
+ <ul class="mainnav">
+  <li>
+   <a href="http://www.cs.ox.ac.uk/" title="Return to the Home page" class="menu">Home
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/prospectivestudents/" title="Information for prospective students, and admissions information" class="menu">Prospective Students
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/currentstudents/" title="Information for current graduate and undergraduate students" class="menu">Current Students
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/research/" title="Research themes, activities and projects; publications and people" class="currentsection">Research
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/people/" title="Faculty, research staff and students, administrative and support staff" class="menu">People
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/news.html" title="Recent news" class="menu">News
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/seminarsEvents.html" title="Recent events" class="menu">Events
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/vacanciesstudentships.html" title="Job vacancies and studentships" class="menu">Vacancies &amp; Studentships
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/contact.html" title="Directions for visitors, contact information and details for press" class="menu">Contact Us
+   </a>
+  </li>
+  <li>
+   <a href="http://www.cs.ox.ac.uk/alumni/" title="The Department of Computer Science Alumni Network" class="menu">Alumni
+   </a>
+  </li>
+  <li>
+   <a href="https://www.cs.ox.ac.uk/industry/" title="The Department of Computer Science Industry Liaison Network" class="menu">Industry Liaison
+   </a>
+  </li>
+ </ul>
+
+<h2 id="inthissection">RSS Feeds</h2>
+<div class="popoutarea">
+<ul>
+<li class="popout" id="newsfeedspopout"><a href="javascript:void(0)" onblur="var parentNode=this.parentNode;window.setTimeout(function(){parentNode.className=&#39;popout&#39;;},200);" onclick="if(this.parentNode.className==&#39;popout&#39;){changeCSSClass(this.parentNode.parentNode.parentNode.parentNode,&#39;poppedout&#39;,&#39;popout&#39;);this.parentNode.className=&#39;poppedout&#39;;this.focus();}else{changeCSSClass(this.parentNode.parentNode.parentNode.parentNode,&#39;poppedout&#39;,&#39;popout&#39;);this.blur(); };"><span>News</span></a>
+
+<div class="popoutmenu">
+<h2 id="inthissection">News</h2>
+<ul class="subnav">
+<li><a title="News" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-All.xml">All news</a></li>
+<li><a title="Awards" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Awards.xml">Awards</a></li>
+<li><a title="Events" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Events.xml">Events</a></li>
+<li><a title="Miscellaneous" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Miscellaneous.xml">Miscellaneous</a></li>
+<li><a title="Projects" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Projects.xml">Project news</a></li>
+<li><a title="Publications" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Publications.xml">Publications</a></li>
+<li><a title="Projects" class="rss" href="http://www.cs.ox.ac.uk/feeds/Projects-All.xml">Current Projects</a></li>
+</ul>
+</div>
+
+</li>
+</ul>
+</div>
+
+<div class="popoutarea">
+<ul>
+<li class="popout"><a href="javascript:void(0)" onblur="var parentNode=this.parentNode;window.setTimeout(function(){parentNode.className=&#39;popout&#39;;},200);" onclick="if(this.parentNode.className==&#39;popout&#39;){changeCSSClass(this.parentNode.parentNode.parentNode.parentNode,&#39;poppedout&#39;,&#39;popout&#39;);this.parentNode.className=&#39;poppedout&#39;;this.focus();}else{changeCSSClass(this.parentNode.parentNode.parentNode.parentNode,&#39;poppedout&#39;,&#39;popout&#39;);this.blur(); };"><span>Vacancies &amp; studentships</span></a>
+<div class="popoutmenu">
+<h2 id="inthissection">Vacancies &amp; studentships</h2>
+<ul class="subnav">
+<li><a title="Vacancies" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Vacancies.xml">Vacancies</a></li>
+<li><a title="Studentships" class="rss" href="http://www.cs.ox.ac.uk/feeds/News-Studentships.xml">Studentships</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<h2 id="inthissection">Calendars</h2>
+
+<div class="popoutarea">
+<ul>
+<li class="popout"><a href="javascript:void(0)" onblur="var parentNode=this.parentNode;window.setTimeout(function(){parentNode.className=&#39;popout&#39;;},200);" onclick="if(this.parentNode.className==&#39;popout&#39;){changeCSSClass(this.parentNode.parentNode.parentNode.parentNode,&#39;poppedout&#39;,&#39;popout&#39;);this.parentNode.className=&#39;poppedout&#39;;this.focus();}else{changeCSSClass(this.parentNode.parentNode.parentNode.parentNode,&#39;poppedout&#39;,&#39;popout&#39;);this.blur(); };"><span>Seminars &amp; timetables</span></a>
+<div class="popoutmenu">
+<h2 id="inthissection">Seminars &amp; timetables</h2>
+
+<ul class="subnav">
+<li><a href="javascript:void(0)" onclick="icalLink(&#39;http://www.cs.ox.ac.uk/feeds/SeminarSeries-All.ics&#39;,&#39;All Seminars&#39;)" class="ical">All Seminars</a></li>
+<li><a href="javascript:void(0)" onclick="icalLink(&#39;http://www.cs.ox.ac.uk/feeds/Timetable-Lecture.ics&#39;,&#39;Lecture timetable&#39;)" class="ical">Lecture timetable</a></li>
+<li><a href="javascript:void(0)" onclick="icalLink(&#39;http://www.cs.ox.ac.uk/feeds/Timetable-Practical.ics&#39;,&#39;Practical timetable&#39;)" class="ical">Practical timetable</a></li>
+<li><a href="javascript:void(0)" onclick="icalLink(&#39;http://www.cs.ox.ac.uk/feeds/Timetable-Class.ics&#39;,&#39;Class timetable&#39;)" class="ical">Class timetable</a></li>
+</ul>
+
+</div>
+</li>
+</ul>
+</div>
+
+<h2 id="inthissection">Internal</h2>
+<ul class="subnav">
+<li><a href="http://www.cs.ox.ac.uk/internal/" class="menu">Internal / Intranet</a></li>
+<li><a href="http://www.cs.ox.ac.uk/login/" class="menu">Edit website / database login</a></li>
+<li><a href="https://wiki.cs.ox.ac.uk/wiki/support" class="menu">IT Support</a></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+<!-- all div ends -->
+
+
+</body></html>

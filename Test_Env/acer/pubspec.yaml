@@ -54,6 +54,7 @@ flutter:
   assets:
     - assets/logo/acer_icon.png
     - assets/logo/acer_icon_light.png
+    - assets/logo/acer_light.png
     - assets/logo/login_light.png
     - assets/icons/twitter_icon.png
     - assets/icons/google_icon.png

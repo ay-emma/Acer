@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_crss" value="name:id_crs;datatype:int,name:title_crs;datatype:string,name:code_crs;datatype:string" />
+	<infoitem key="UD_rs_mat" value="name:id_rc;datatype:int,name:idcrs_rc;datatype:int,name:idlect_rc;datatype:int,name:name_rc;datatype:string,name:mimetype_rc;datatype:string,name:size_rc;datatype:string,name:date_rc;datatype:string" />
+</info>

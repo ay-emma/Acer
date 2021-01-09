@@ -18,27 +18,30 @@ class FeaturePage extends HookWidget {
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
               SliverAppBar(
+                backgroundColor: gThemes.currentTheme.scaffoldBackgroundColor,
+                shadowColor: lightGreen,
                 expandedHeight: 200.0,
                 floating: false,
                 pinned: true,
                 flexibleSpace: FlexibleSpaceBar(
-                    //centerTitle: true,
-                    titlePadding: const EdgeInsets.all(0),
-                    title: Container(
-                      alignment: Alignment.bottomLeft,
-                      // color: Colors.redAccent,
-                      child: Image(
-                        image: AssetImage("assets/logo/acer_icon_light.png"),
-                        height: 70,
-                      ),
+                  //centerTitle: true,
+                  titlePadding: const EdgeInsets.all(0),
+                  title: Container(
+                    alignment: Alignment.bottomCenter,
+                    // color: Colors.redAccent,
+                    child: Image(
+                      image: AssetImage("assets/logo/acer_light.png"),
+                      height: 70,
                     ),
-                    background: Opacity(
-                      opacity: 0.3,
-                      child: Image.network(
-                        "https://static.vecteezy.com/system/resources/previews/000/180/360/non_2x/e-learning-vector-illustration.png",
-                        fit: BoxFit.cover,
-                      ),
-                    )),
+                  ),
+                  background: Opacity(
+                    opacity: 0.3,
+                    child: Image.network(
+                      "https://static.vecteezy.com/system/resources/previews/000/180/360/non_2x/e-learning-vector-illustration.png",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
               ),
             ];
           },

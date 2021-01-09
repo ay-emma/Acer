@@ -35,17 +35,27 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
     headline5: GoogleFonts.nunito(fontSize: 26, fontWeight: FontWeight.w400),
     headline6: GoogleFonts.nunito(
         fontSize: 21,
-        color: accentGreen,
+        color: whiteGreen,
         fontWeight: FontWeight.w500,
         letterSpacing: 0.15),
     subtitle1: GoogleFonts.nunito(
-        fontSize: 17, fontWeight: FontWeight.w400, letterSpacing: 0.15),
+        color: accentGreen,
+        fontSize: 17,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.15),
     subtitle2: GoogleFonts.nunito(
-        fontSize: 15, fontWeight: FontWeight.w500, letterSpacing: 0.1),
+        color: accentGreen,
+        fontSize: 15,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.1),
     bodyText1: GoogleFonts.nunito(
         fontSize: 17, fontWeight: FontWeight.w400, letterSpacing: 0.5),
     bodyText2: GoogleFonts.nunito(
-        fontSize: 15, fontWeight: FontWeight.w400, letterSpacing: 0.25),
+      color: accentGreen,
+      fontSize: 13,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.25,
+    ),
     button: GoogleFonts.nunito(
         fontSize: 15, fontWeight: FontWeight.w500, letterSpacing: 1.25),
     caption: GoogleFonts.nunito(
@@ -55,10 +65,11 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
       letterSpacing: 0.4,
     ),
     overline: GoogleFonts.nunito(
-        fontSize: 11,
-        color: accentGreen,
-        fontWeight: FontWeight.w400,
-        letterSpacing: 1.5),
+      fontSize: 11,
+      color: accentGreen,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 1.2,
+    ),
   ),
 );
 
@@ -137,7 +148,10 @@ ThemeData lightTheme = ThemeData.light().copyWith(
         fontWeight: FontWeight.w400,
         letterSpacing: 0.5),
     bodyText2: GoogleFonts.nunito(
-        fontSize: 15, fontWeight: FontWeight.w400, letterSpacing: 0.25),
+        fontSize: 13,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.25,
+        color: dblack),
     button: GoogleFonts.nunito(
         color: dblack,
         fontSize: 15,
@@ -152,6 +166,6 @@ ThemeData lightTheme = ThemeData.light().copyWith(
         fontSize: 11,
         fontWeight: FontWeight.w400,
         color: dblack,
-        letterSpacing: 1.5),
+        letterSpacing: 1.2),
   ),
 );

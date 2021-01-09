@@ -1,0 +1,204 @@
+
+
+
+
+
+/*
+
+This stylesheet provides styling for the main navigation elements in your site
+
+*/
+
+ 
+ /* 
+ 
+ NESTED NAV STYLINGS  
+ 
+ These styles are for single level main navigation  with  an 'in the section list' of child links stacked under the main anv
+ 
+ */
+ 
+ 
+  /*  hide the main nav h2 - it makes sense to have it in the mark-up, but we don't want to show it,  as the purpose of the nav bar is obvious visually.
+ 
+To hide it, we set the position as absolute, and place it way off screen (this is recommended in preference to using display:none because "display:none" may hide it from screenreaders, which we don't want)
+ */
+  div#nav h2#mainsections
+ {
+ 	position: absolute;
+ 	left: -3600px;
+ }
+
+ div#nav
+{
+
+padding: 0px;
+margin: 0px;
+
+}
+
+ 
+ /* nav bar stuff starts  */
+div#nav ul
+{
+
+padding: 0px;
+margin: 0px;
+margin-left: 0px;
+margin-top: 20px;
+border-width: 0px;
+	
+	
+padding-bottom: 0px;
+border: 1px solid #002147;
+
+}
+
+
+div#sidebar  ul.mainnav
+ {
+/* background: url(../images/interface/mainnav-trim.png) no-repeat bottom left; */
+/* padding-bottom: 15px;*/
+ }
+ 
+ div#sidebar  ul.subnav
+ {
+
+/* background: url(../images/interface/subnav-trim.png) no-repeat bottom left;
+ padding-bottom: 15px; */
+ }
+
+div#nav ul li
+{
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 0px;
+	margin-bottom:0px;
+	list-style: none;
+	border-width: 0px;
+	line-height: 1em;
+ 
+ 
+	/* 1 pixel border bottom on li is required to avoid unwanted space 
+in IE6 */
+border-bottom: 1px solid #002147; 
+
+
+}
+
+div#nav ul li a
+{
+	background-color: #f2f9ff;
+	background-image: url('/images/sitemap/white-highlight.png');
+	color: #002147;
+ 
+}
+ div#nav ul li a.currentsection
+{
+	background-color: #bfcff1;
+	color: #002147;
+
+}
+
+div#nav ul li a:hover, div#nav ul li a:focus
+{
+	background-color: #c0d3e4;
+	color: #000;
+}
+
+
+ div#nav ul li span.youarehere
+ 
+ {
+	background-color: #002147;
+	background-image: url('/images/sitemap/white-highlight.png');
+	color: #fff;
+}
+
+
+
+div#nav ul li a, div#nav ul li a#currentsection, div#nav ul li span.youarehere
+{
+
+	text-align: right;   
+	display: block;
+	border-width: 0px;
+	font-size:0.95em;
+	padding: 0.7em;
+	padding-right: 0.4em;
+	text-decoration: none;
+
+}
+
+
+div#nav ul li a#currentsection
+{
+
+}
+
+div#nav ul li#a, div#nav ul li, div#nav ul li span.youarehere
+{
+
+}
+
+
+div#nav ul li ul li a, div#nav ul li ul li span.youarehere
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: normal;
+	border-width: 0px ;
+	padding-right: 2.3em;
+	
+	
+}
+
+
+div#nav ul li.currentsection
+{
+border-top: 1px solid #002147;
+
+
+}
+
+div#nav ul li ul
+{
+margin: 0px;
+padding: 0px;
+border-left-width: 0px;
+border-right-width: 0px;
+
+
+}
+
+/* indent sub-sub navigation further */
+
+div#nav ul li ul li ul li a, div#nav ul li ul li ul li span.youarehere
+{
+;
+	padding-right: 3.6em;
+	
+	
+}
+
+h2#inthissection
+{
+background-color: #002147;
+border: 1px solid #002147;
+border-bottom: 1px solid #fff;
+color: #fff;
+text-align: center;
+font-family: lucida grande, verdana, arial, sans-serif;
+font-size: 0.9em;
+letter-spacing: normal;
+margin-bottom: 0px;
+padding-bottom: 2px;
+}
+
+div#nav ul.subnav
+{
+margin-top: 0px;
+padding-top: 0px;
+}
+
+

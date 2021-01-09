@@ -1,0 +1,470 @@
+
+
+
+
+
+/*
+
+This stylesheet sets out the basic layout of the page and the styles for main consistnt elements of the site (header, footer, sidebar, etc.) except for the navigation, which is dealt with seperately in mainnav.css
+
+*/
+
+body
+{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 30px;
+	background-color: #fff;
+	background: url(../images/banner-new.png) repeat-x 215px 15px; 
+}
+
+
+div#all {
+
+position: relative;
+/* background: url(../images/2241_ox_brand3_pos_rect.gif) no-repeat 0px 15px; */
+	border-left: 15px solid #fff; 
+}
+
+
+div#header
+{
+	text-align: right;
+	height: 78px;
+	background: url(../images/banner_fade1-new.png) no-repeat 0px 15px;
+	margin-left: 198px;
+	border-left: 2px solid #fff;
+}
+
+/* general style for stuff you want to hide off-screen*/
+div#site-info dl dt, .scram
+{
+position: absolute;
+top: -11110px;
+left: -11110px;
+}
+
+
+/* give padding to div's that directly contain content*/
+div#content, div#nav, div#additional, div#footer
+{
+	padding: 1em;
+}
+
+
+/*  give div's in the main flow a left margin to avoid overlap with the sidebar */
+
+div#content, div#footer
+{
+margin-left: 208px;
+margin-right: 11px;
+}
+
+div#breadcrumb{
+margin-left: 208px;
+}
+
+div#content
+{
+margin-top: 20px;
+padding-top: 0px;
+
+
+}
+
+h1
+{
+margin-bottom: 10px;
+margin-top: 0px;
+}
+
+
+
+div#breadcrumb
+{
+padding: 0px;
+padding-left: 1em;
+text-align: left;
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 0.88em;
+}
+
+
+div#breadcrumb span#breadcrumb-label
+{
+font-weight: bold;
+margin-left: 5px;
+}
+div#breadcrumb ul, div#breadcrumb ul li
+{
+display: inline;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+div#breadcrumb ul li
+{
+padding-left: 2px;
+margin-left: 5px;
+}
+
+
+div#breadcrumb ul li a
+{
+padding-right: 15px;
+background: url(../images/interface/arrow.png) no-repeat center right ;
+
+}
+
+div#breadcrumb ul li span.youarehere
+{
+font-weight: bold;
+}
+
+/* FOOTER STYLES  */
+div#footer
+{
+
+/* centre-align the footer text, and make it a little smaller and paler than normal text  */
+text-align: center;
+font-size: 0.87em;
+color: #999;
+line-height: 1.5em;
+clear:both;
+}
+
+div#footer p
+{
+
+}
+
+ul.metalinks, ul.metalinks li
+{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+
+ul.metalinks
+{
+
+text-align: center;
+}
+
+
+ul.metalinks li
+{
+display: inline;
+
+}
+
+ul.metalinks li a
+{
+text-decoration: none;
+}
+
+
+
+/* position sidebar div below the header div and to the left of the page*/
+ div#sidebar
+ {
+ 	position: absolute;
+	top: 86px;
+	left: 0px;
+ 	width: 197px;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	text-align: right;
+	/*height: 5px;*/
+ }
+ 
+ div#sidebar  ul
+ {
+ clear: both;
+ }
+
+/* two highlight categories arranged in two columns */
+
+div.two-cols {
+margin-top:10px;
+width:100%;
+overflow:hidden; /* hides overflow background colour from div.categorys */
+margin-left: 17%;
+margin-right: 17%;
+}
+
+
+div.two-cols p {
+margin-top: 86px;
+margin-right:2px;
+padding:0.1em;
+}
+
+
+div.two-cols div.category {
+
+min-width: 105px;
+width:31%;
+margin:0 1% -90px 0; 
+padding-bottom: 100px; 
+background-color: #f2f9ff;
+float:left;
+}
+
+div.two-cols div#two-cols_right {
+float:left;
+min-width:105px;
+width:31%;
+margin:0 0 -90px 0;
+padding-bottom:100px;
+}
+
+
+/* three highlight categories arranged in three columns */
+
+div.three-cols {
+margin-top:10px;
+width:100%;
+overflow:hidden; /* hides overflow background colour from div.categorys */
+height: 284px;
+max-height: 284px;
+}
+
+div.three-cols p {
+margin-top: 86px;
+margin-right:2px;
+padding:0.1em;
+}
+
+
+div.three-cols div.category {
+
+min-width: 105px;
+width:32%;
+margin:0 1% -90px 0; 
+padding-bottom: 100px; 
+background-color: #f2f9ff;
+float:left;
+}
+
+div.three-cols div#three-cols_right {
+float:left;
+min-width:105px;
+width:32%; 
+margin:0 0 -90px 0;
+padding-bottom:100px; 
+}
+
+
+/*  three columns of categories */
+div.category h2{
+margin: 0px;
+padding: 5px;
+color: #fff;
+font-size: 0.9em;
+text-align: center;
+padding-bottom: 55px;
+background: url(../images/interface/cat-refectory.jpg) repeat-x bottom left ;
+background-color: #002147;
+
+}
+/*  rules for specific images for individual categories  */
+
+
+
+div.category h2#cat-prospective
+{
+background-image: url(../images/interface/cat-studying.jpg)  ;
+}
+
+div.category h2#cat-featured
+{
+background-image: url(../images/interface/cat-building.jpg)  ;
+}
+
+div.category h2#cat-news
+{
+background-image: url(../images/interface/cat-ohp.jpg)  ;
+
+}
+
+div.category h2#cat-miscellaneous
+{
+background-image: url(../images/interface/cat-studying.jpg)  ;
+
+}
+
+div.category h2#cat-seminars
+{
+background-image: url(../images/interface/cat-studying.jpg)  ;
+
+}
+div.category h2#cat-vacancies
+{
+background-image: url(../images/interface/cat-ohp.jpg)  ;
+
+}
+
+div.category h2#cat-studentships
+{
+background-image: url(../images/interface/cat-ohp.jpg)  ;
+
+}
+
+
+div.category h2#cat-events
+{
+background-image: url(../images/interface/cat-refectory.jpg)  ;
+
+}
+
+
+
+div.category h2#cat-featured-2
+{
+background-image: url(../images/interface/cat-ohp.jpg)  ;
+background-position: bottom right;
+
+}
+
+
+span.headline, span.readmore
+{
+font-weight: bold;
+display: block;
+}
+
+span.headline{
+margin-bottom: 10px;
+}
+
+span.readmore{
+margin-top: 10px;
+}
+
+div.summary{
+margin-left: 5px;
+margin-right: 5px;
+
+
+}
+
+
+div.category a{ 	
+text-decoration: none;
+color: #333;
+display: block;
+padding: 5px;
+}
+
+/* Category titles as links */
+div.category h2 a, div.category h2 a:focus{ 	
+text-decoration: none;
+color: white;
+display: inline;
+padding: 0px;
+}
+
+div.category h2 a:hover{ 	
+text-decoration: underline;
+color: white;
+display: inline;
+padding: 0px;
+}
+
+
+div.category a.moredetails{ 	
+margin-bottom: 10px;
+}
+
+
+div.category a:hover, div.category a:focus{ 
+color: #333;
+}
+div.category a span.readmore, 
+div.category a span.headline
+{ 
+
+color: #036;
+}
+
+
+
+div.category a:hover span.readmore, div.category a:focus span.readmore,
+div.category a:hover span.headline, div.category a:focus span.headline
+{ 
+
+color: #03f;
+}
+
+span.headline, span.readmore
+{
+font-weight: bold;
+display: block;
+}
+
+span.headline{
+margin-bottom: 10px;
+}
+
+span.readmore{
+margin-top: 10px;
+}
+
+div.post-highlights
+{
+clear: both;
+}
+
+/*  IE 6 only selector to force 'has-layout'  to fix the peekaboo bug   
+
+(only IE 6 will recognise "* html" as a valid selector)
+
+*/
+
+* html div#all
+{
+	height: 1%;
+	position: relative;
+}
+
+td.publicationOrderCell
+{
+  vertical-align: top;
+  width: 6em;
+  font-size: 0.9em;
+}
+
+p.publicationTitle
+{
+  font-weight: bold;
+}
+
+p.publicationAuthors
+{
+  font-style: italic;
+}
+
+td.publicationInfo
+{
+  padding-left: 0;
+  font-size: 0.9em;
+}
+
+
+div#searchbar
+{
+  width:199px; 
+  height: 1em; 
+  vertical-align: middle;
+}
+
+table.searchNavigation
+{
+  border: 1px solid #002147;
+  background: #c0d3e4;
+}
+
