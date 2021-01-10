@@ -14,6 +14,9 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
   colorScheme: ColorScheme.fromSwatch(
     primarySwatch: Colors.green,
   ),
+
+  iconTheme: IconThemeData(color: lightGreen),
+
   tabBarTheme: TabBarTheme(
     labelColor: white,
     unselectedLabelColor: white,
@@ -88,6 +91,7 @@ ThemeData lightTheme = ThemeData.light().copyWith(
     primarySwatch: Colors.green,
   ),
 
+  iconTheme: IconThemeData(color: lightGreen),
   // TextThemes
   tabBarTheme: TabBarTheme(
     labelColor: dblack,

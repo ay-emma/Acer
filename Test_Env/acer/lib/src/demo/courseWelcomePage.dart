@@ -1,6 +1,7 @@
 import 'package:acer/src/themes/colors.dart';
 import 'package:acer/src/themes/theme_model.dart';
 import 'package:acer/src/widgets/buttons.dart';
+import 'package:acer/src/widgets/courseExpansionTile.dart';
 import 'package:acer/src/widgets/slider.dart';
 import 'package:acer/src/widgets/tab_views.dart';
 import 'package:acer/src/widgets/testimonies.dart';
@@ -218,6 +219,42 @@ class CourseWelcomePage extends HookWidget {
                   "Prerequesite and Requirement",
                   "This course is designed for anyone interested in understanding cutting edge financial technologies.This course will be of particular interest to learners with a background in finance, development, or business leadership and learning how to develop and use new financial technologies in their own context.",
                 ),
+                SizedBox(
+                  height: 20,
+                ),
+                _teachersProfile(
+                  gThemes,
+                  "Who will you learn with?",
+                  "This course is designed for anyone interested in understanding cutting edge financial technologies.This course will be of particular interest to learners with a background in finance, development, or business leadership and learning how to develop and use new financial technologies in their own context.",
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                _learnersReview(gThemes),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.79,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                  decoration: BoxDecoration(
+                      color: gThemes.currentTheme.accentColor,
+                      borderRadius: BorderRadius.circular(20)),
+                  child: CourseExpansionTiles(
+                    backgroundColor: gThemes.currentTheme.accentColor,
+
+                    //collapsedBackgroundColor: gThemes.currentTheme.accentColor,
+                    title: Text(
+                      "Course Curriculum",
+                      style: gThemes.currentTheme.textTheme.bodyText1,
+                    ),
+                    children: [
+                      Text("Course Curriculum"),
+                      Text("Course Curriculum"),
+                    ],
+                  ),
+                ),
                 ButtonBar(
                   alignment: MainAxisAlignment.center,
                   children: [
@@ -332,6 +369,165 @@ class CourseWelcomePage extends HookWidget {
                 ),
               ),
             ],
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _teachersProfile(ThemeModel gThemes, String header, String bodyTexts) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(header, style: gThemes.currentTheme.textTheme.headline6),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CircleAvatar(
+                radius: 42,
+                child: Image(
+                  image: AssetImage("assets/logo/acer_light.png"),
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Expanded(
+                  child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Angela Yu",
+                    style: gThemes.currentTheme.textTheme.bodyText1,
+                  ),
+                  Text(
+                    bodyTexts,
+                    style: gThemes.currentTheme.textTheme.bodyText2,
+                  ),
+                ],
+              )),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _learnersReview(
+    ThemeModel gThemes,
+  ) {
+    return Center(
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+            color: gThemes.currentTheme.accentColor,
+            borderRadius: BorderRadius.circular(20)),
+        constraints: BoxConstraints(maxWidth: 240),
+        child: Column(
+          children: [
+            Text(
+              "learners Review",
+              style: gThemes.currentTheme.textTheme.subtitle1,
+            ),
+            SizedBox(
+              height: 6,
+            ),
+            Row(
+              children: [
+                Text(
+                  "4.5",
+                  style: gThemes.currentTheme.textTheme.subtitle1,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("5"),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        _parcentageBar(gThemes, 140, 6, "5"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("4"),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        _parcentageBar(gThemes, 140, 6, "5"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("3"),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        _parcentageBar(gThemes, 140, 6, "5"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("2"),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        _parcentageBar(gThemes, 140, 6, "5"),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text("1"),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        _parcentageBar(gThemes, 140, 6, "5"),
+                      ],
+                    ),
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _parcentageBar(
+      ThemeModel gThemes, double width, double height, String texts) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 8),
+      width: width,
+      height: height,
+      child: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: gThemes.currentTheme.canvasColor,
+            ),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: lightGreen,
+            ),
+            width: width * 0.6,
           )
         ],
       ),
