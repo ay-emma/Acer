@@ -159,18 +159,18 @@ class _CourseExpansionTilesState extends State<CourseExpansionTiles>
   }
 
   Widget _buildChildren(BuildContext context, Widget child) {
-    final Color borderSideColor = _borderColor.value ?? Colors.transparent;
+    // final Color borderSideColor = _borderColor.value ?? Colors.transparent;
 
     return Container(
       decoration: BoxDecoration(
         color: _backgroundColor.value ?? Colors.transparent,
-        border: Border(
-          top: BorderSide(color: borderSideColor),
-          bottom: BorderSide(color: borderSideColor),
-        ),
+        // border: Border(
+        //   top: BorderSide(color: borderSideColor),
+        //   bottom: BorderSide(color: borderSideColor),
+        // ),
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
         children: <Widget>[
           ListTileTheme.merge(
             iconColor: _iconColor.value,

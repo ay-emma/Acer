@@ -52,7 +52,11 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
         fontWeight: FontWeight.w500,
         letterSpacing: 0.1),
     bodyText1: GoogleFonts.nunito(
-        fontSize: 17, fontWeight: FontWeight.w400, letterSpacing: 0.5),
+      color: whiteGreen,
+      fontSize: 17,
+      fontWeight: FontWeight.w400,
+      letterSpacing: 0.5,
+    ),
     bodyText2: GoogleFonts.nunito(
       color: accentGreen,
       fontSize: 13,

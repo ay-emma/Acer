@@ -5,6 +5,8 @@ import 'package:acer/src/widgets/courseExpansionTile.dart';
 import 'package:acer/src/widgets/slider.dart';
 import 'package:acer/src/widgets/tab_views.dart';
 import 'package:acer/src/widgets/testimonies.dart';
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+import 'package:drawerbehavior/menu_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/all.dart';
@@ -17,6 +19,18 @@ class CourseWelcomePage extends HookWidget {
     final gThemes = useProvider(currentTheme);
 
     return Scaffold(
+      // drawer: SideDrawer(
+      //   //menu: ,
+      //   direction: Direction.left, // Drawer position, left or right
+      //   animation: true,
+      //   color: Theme.of(context).primaryColor,
+      //   //d selectedItemId: selectedMenuItemId,
+      //   onMenuItemSelected: (itemId) {
+      //     // setState(() {
+      //     //   selectedMenuItemId = itemId;
+      //     // });
+      //   },
+      // ),
       body: NestedScrollView(
         headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
           return <Widget>[
@@ -234,25 +248,120 @@ class CourseWelcomePage extends HookWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Container(
-                  width: MediaQuery.of(context).size.width * 0.79,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(
-                      color: gThemes.currentTheme.accentColor,
-                      borderRadius: BorderRadius.circular(20)),
-                  child: CourseExpansionTiles(
-                    backgroundColor: gThemes.currentTheme.accentColor,
+                Center(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.88,
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                        color: gThemes.currentTheme.accentColor,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: CourseExpansionTiles(
+                      backgroundColor: gThemes.currentTheme.accentColor,
+                      tilePadding: const EdgeInsets.symmetric(horizontal: 0),
+                      //collapsedBackgroundColor: gThemes.currentTheme.accentColor,
+                      title: Text(
+                        "Course Curriculum",
+                        style: gThemes.currentTheme.textTheme.bodyText1,
+                      ),
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: gThemes.currentTheme.scaffoldBackgroundColor,
+                            border: Border.all(
+                              width: 3,
+                              color: gThemes.currentTheme.accentColor,
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 3),
+                                child: Icon(
+                                  Icons.now_wallpaper,
+                                  color: lightGreen,
+                                  size: 18,
+                                ),
+                              ),
+                              Container(
+                                width: 4,
+                                height: 30,
+                                color: gThemes.currentTheme.accentColor,
+                              ),
+                              Expanded(
+                                child: Text(
+                                    "Section 1: Introduction to fintech",
+                                    softWrap: false,
+                                    overflow: TextOverflow.fade,
+                                    style: gThemes
+                                        .currentTheme.textTheme.bodyText1),
+                              ),
+                            ],
+                          ),
+                        ),
 
-                    //collapsedBackgroundColor: gThemes.currentTheme.accentColor,
-                    title: Text(
-                      "Course Curriculum",
-                      style: gThemes.currentTheme.textTheme.bodyText1,
+                        // dfds
+                        Container(
+                          decoration: BoxDecoration(
+                            color: gThemes.currentTheme.scaffoldBackgroundColor,
+                            border: Border.all(
+                              width: 3,
+                              color: gThemes.currentTheme.accentColor,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 3),
+                                child: Icon(
+                                  Icons.now_wallpaper,
+                                  color: lightGreen,
+                                  size: 18,
+                                ),
+                              ),
+                              Container(
+                                width: 4,
+                                height: 30,
+                                color: gThemes.currentTheme.accentColor,
+                              ),
+                              Expanded(
+                                child: Container(
+                                  margin: const EdgeInsets.all(2),
+                                  color: gThemes
+                                      .currentTheme.scaffoldBackgroundColor,
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.play_arrow_rounded,
+                                        color: lightGreen,
+                                        size: 18,
+                                      ),
+                                      SizedBox(
+                                        width: 4,
+                                      ),
+                                      Expanded(
+                                        child: Text(
+                                          "Section 1: Introduction to fintech",
+                                          softWrap: false,
+                                          overflow: TextOverflow.fade,
+                                          style: gThemes
+                                              .currentTheme.textTheme.bodyText2,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Text("Course Curriculum"),
+                        Text("Course Curriculum"),
+                      ],
                     ),
-                    children: [
-                      Text("Course Curriculum"),
-                      Text("Course Curriculum"),
-                    ],
                   ),
                 ),
                 ButtonBar(
@@ -271,7 +380,8 @@ class CourseWelcomePage extends HookWidget {
                   },
                   color: lightGreen,
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   minWidth: 80,
                   height: 45,
                   child: Text(
@@ -279,10 +389,25 @@ class CourseWelcomePage extends HookWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
+                SizedBox(
+                  height: 70,
+                ),
               ],
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: ConvexAppBar(
+        style: TabStyle.flip,
+        items: [
+          TabItem(icon: Icons.home, title: 'Home'),
+          TabItem(icon: Icons.map, title: 'Discovery'),
+          TabItem(icon: Icons.add, title: 'Add'),
+          TabItem(icon: Icons.message, title: 'Message'),
+          TabItem(icon: Icons.people, title: 'Profile'),
+        ],
+        initialActiveIndex: 2, //optional, default as 0
+        onTap: (int i) => print('click index=$i'),
       ),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:acer/src/themes/colors.dart';
 import 'package:acer/src/widgets/buttons.dart';
+import 'package:acer/src/widgets/progressBar.dart';
 import 'package:acer/src/widgets/slider.dart';
 import 'package:acer/src/widgets/tab_views.dart';
 import 'package:acer/src/widgets/testimonies.dart';
@@ -157,6 +158,9 @@ class UserCoursesPage extends HookWidget {
                                           )
                                         ],
                                       ),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
                                     ),
                                     Text("58% Completed",
                                         style: gThemes

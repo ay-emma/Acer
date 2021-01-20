@@ -1,4 +1,5 @@
 import 'package:acer/src/demo/feturesPage.dart';
+import 'package:acer/src/demo/startOrContinueCourse.dart';
 import 'package:acer/src/themes/colors.dart';
 import 'package:acer/src/themes/theme_model.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class MyApp extends HookWidget {
     return MaterialApp(
       title: 'Acer Demo',
       theme: themeProvider.currentTheme,
-      home: CourseWelcomePage(),
+      home: DrawerScale(),
     );
   }
 }
