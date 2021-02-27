@@ -1,12 +1,12 @@
 import 'package:acer/src/themes/colors.dart';
 import 'package:flutter/material.dart';
 
-class TabView extends StatefulWidget {
+class FeatureTabView extends StatefulWidget {
   @override
-  _TabViewState createState() => _TabViewState();
+  _FeatureTabViewState createState() => _FeatureTabViewState();
 }
 
-class _TabViewState extends State<TabView> {
+class _FeatureTabViewState extends State<FeatureTabView> {
   @override
   Widget build(BuildContext context) {
     return Material(

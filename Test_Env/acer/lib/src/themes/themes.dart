@@ -96,6 +96,7 @@ ThemeData lightTheme = ThemeData.light().copyWith(
   ),
 
   iconTheme: IconThemeData(color: lightGreen),
+
   // TextThemes
   tabBarTheme: TabBarTheme(
     labelColor: dblack,

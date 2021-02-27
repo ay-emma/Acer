@@ -4,12 +4,12 @@ import 'package:drawerbehavior/drawer_scaffold.dart';
 import 'package:drawerbehavior/drawerbehavior.dart';
 import 'package:flutter/material.dart';
 
-class DrawerScale extends StatefulWidget {
+class StartOrContinueCourse extends StatefulWidget {
   @override
-  _DrawerScaleState createState() => _DrawerScaleState();
+  _StartOrContinueCourseState createState() => _StartOrContinueCourseState();
 }
 
-class _DrawerScaleState extends State<DrawerScale> {
+class _StartOrContinueCourseState extends State<StartOrContinueCourse> {
   int selectedMenuItemId;
 
   @override
@@ -39,7 +39,17 @@ class _DrawerScaleState extends State<DrawerScale> {
   Widget build(BuildContext context) {
     return DrawerScaffold(
       appBar: AppBar(
-          title: Text("Drawer - Scale"),
+          iconTheme: Theme.of(context).iconTheme,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          title: Container(
+            alignment: Alignment.topLeft,
+            //color: Colors.redAccent,
+            child: Image(
+              image: AssetImage("assets/logo/acer_light.png"),
+              height: 50,
+              fit: BoxFit.cover,
+            ),
+          ),
           actions: [IconButton(icon: Icon(Icons.add), onPressed: () {})]),
       drawers: [
         SideDrawer(
@@ -64,12 +74,18 @@ class _DrawerScaleState extends State<DrawerScale> {
           width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
-              FlutterLogo(),
-              Container(
-                color: Colors.amber,
-                width: 200,
-                height: 100,
-              )
+              // FlutterLogo(),
+              AspectRatio(
+                aspectRatio: 16 / 9,
+                child: Container(
+                  color: darkGreen,
+                  //width: 90,
+                ),
+              ),
+              Text(
+                "Introduction to what fintech is all about",
+                style: Theme.of(context).textTheme.bodyText1,
+              ),
             ],
           ),
         );

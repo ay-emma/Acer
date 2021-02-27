@@ -10,6 +10,7 @@ import 'package:hooks_riverpod/all.dart';
 import 'src/demo/courseWelcomePage.dart';
 import 'src/demo/firstscreen.dart';
 import 'src/demo/loginPage.dart';
+import 'src/demo/preStartOrContinueCourse.dart';
 import 'src/demo/user_coursesPage.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class MyApp extends HookWidget {
     return MaterialApp(
       title: 'Acer Demo',
       theme: themeProvider.currentTheme,
-      home: DrawerScale(),
+      home: PreStatOrContinueCourse(),
     );
   }
 }

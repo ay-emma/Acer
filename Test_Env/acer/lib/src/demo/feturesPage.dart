@@ -71,7 +71,7 @@ class FeaturePage extends HookWidget {
                   Container(
                     height: 300,
                     width: double.infinity,
-                    child: TabView(),
+                    child: FeatureTabView(),
                   ),
                   TestimoniesSection(),
                   SizedBox(

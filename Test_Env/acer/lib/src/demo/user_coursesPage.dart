@@ -84,7 +84,7 @@ class UserCoursesPage extends HookWidget {
                   ),
                   Center(
                     child: Container(
-                      width: 250,
+                      width: 260,
                       height: 310,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
@@ -105,7 +105,7 @@ class UserCoursesPage extends HookWidget {
                                   fit: BoxFit.cover,
                                   image:
                                       AssetImage("assets/logo/acer_light.png"),
-                                  height: 70,
+                                  height: 170,
                                 ),
                               ),
                             ),
